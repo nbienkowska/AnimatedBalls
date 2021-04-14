@@ -4,8 +4,6 @@
 
 #include "pch.h"
 #include "framework.h"
-// SHARED_HANDLERS can be defined in an ATL project implementing preview, thumbnail
-// and search filter handlers and allows sharing of document code with that project.
 #ifndef SHARED_HANDLERS
 #include "anim.h"
 #endif
@@ -121,7 +119,7 @@ void CanimView::Dump(CDumpContext& dc) const
 	CView::Dump(dc);
 }
 
-CanimDoc* CanimView::GetDocument() const // non-debug version is inline
+CanimDoc* CanimView::GetDocument() const
 {
 	ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CanimDoc)));
 	return (CanimDoc*)m_pDocument;
