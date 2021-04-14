@@ -12,17 +12,13 @@
 
 class CanimView : public CView
 {
-protected: // create from serialization only
+protected:
 	CanimView() noexcept;
 	DECLARE_DYNCREATE(CanimView)
 
 // Attributes
 public:
 	CanimDoc* GetDocument() const;
-
-// Operations
-public:
-
 // Overrides
 public:
 	virtual void OnDraw(CDC* pDC);  // overridden to draw this view
@@ -41,14 +37,8 @@ protected:
 
 private:
 	UINT_PTR m_nTimerID;
-	//CRect* m_pBall;
-	//CPen* m_pBallPen;
-	//CBrush* m_pBallBrush;
-	//int m_nBallOffX;
-	//int m_nBallOffY;
 	BOOL m_bStart;
 	CRect* m_pClientRect;
-
 	std::vector<CBall*> balls;
 	int ballCount;
 // Generated message map functions
