@@ -1,2 +1,2 @@
 # AnimatedBalls
-An MFC program displaying a bunch of colourful animated balls, movinfg freely on the app window.
+An MFC program implementin an animation of a bunch of colourful balls, moving freely on the app window.
