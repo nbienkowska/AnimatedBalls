@@ -11,12 +11,6 @@ protected: // create from serialization only
 	CMainFrame() noexcept;
 	DECLARE_DYNCREATE(CMainFrame)
 
-// Attributes
-public:
-
-// Operations
-public:
-
 // Overrides
 public:
 	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
